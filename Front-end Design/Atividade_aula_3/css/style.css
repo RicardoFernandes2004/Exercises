@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header section div .desafio1{
+    color: orange;
+}
+
+header section div #lista1{
+    color: #0008ff;
+}
+
+header section div #lista2{
+    color: rgba(255,100,230,0.980)
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 10px;
+    padding: 10px;
+}
+
+section{
+    padding: 50px 20px 30px 60px;
+    border: solid 2px black;
+    margin-left: 40px;
+}
+
+section > article{
+background-color: #cccccc;
+width: 500px;
+height: 500px;
+}
+
+section > article > p{
+    line-height: 4;
+}
+
+.bordasArredondadas{
+    padding: 10;
+    border: solid 2px black;
+    border-radius: 10;
+}
+
+#produtos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.herancaVermelha{
+    color: red;
+}
+
+.herancaVermelha:hover{
+    font-size: 30px;
+    color: darkred;
+}
+
+.testeFormatacao > p{
+font-family: 'Courier New', Courier, monospace;
+}
+
+.testeListas > ul{
+    list-style: none;
+    font-family: "Madimi One", sans-serif;
+}
+
