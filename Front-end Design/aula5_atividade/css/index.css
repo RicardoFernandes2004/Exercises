@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.overflow{
+    height: 200px;
+    width: 200px;
+    border: 1px dotted black;
+    padding: 6px 9px;
+    margin: 5px 8px;
+    overflow: auto;
+}
