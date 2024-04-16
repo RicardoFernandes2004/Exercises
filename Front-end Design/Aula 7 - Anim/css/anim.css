@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    animation-duration: 2s;
+    animation-name: animacao;
+    animation-iteration-count: infinite;
+    transition: all 2s;
+}
+
+.efeito{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: um_efeito;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 5s;
+}
+
+@keyframes grad_main_page {
+    0%{
+        border-radius: 50%;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        border-radius: 100%;
+        background-color: aquamarine;
+        left: 200px;
+        top: 200px;
+    }
+    50%{
+        border-radius: 50%;
+        top: 600px;
+        left: 365px;
+        background-color: blueviolet;
+    }
+
+    75%{
+        background-color: cornflowerblue;
+        top: 543px;
+        border-radius: 100%;
+        left: 290px;
+    }
+
+    100%{
+        border-radius: 50%;
+        background-color: darkslategray;
+        top: 0px;
+        left: 0px;
+        
+    }
+}
+
+@keyframes um_efeito {
+    0%{
+        width: 100px;
+    }
+    25%{
+        width: 300px;
+    }
+
+    50%{
+        width: 200px;
+        background-color: red;
+    }
+
+    75%{
+        width: 300px;
+    }
+
+    100%{
+        width: 100px;
+        background-color: green;
+    }
+    
+}
+
+@keyframes animacao {
+    0%{
+        font-size: 12px;
+    }
+    25%{
+        font-size: 24px;
+    }
+    50%{
+        color: brown;
+        font-size: 48px;
+    }
+
+    75%{
+        font-size: 24px;
+        color: black;
+    }
+    100%{
+        font-size: 12px;
+    }
+    
+}
