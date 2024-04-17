@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manupulation</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1>DOM (Document Object Model)</h1>
+    <h2>Oferece uma API para interagir com o documento</h2> <br>
+    <h2>Calculadora</h2><br>
+    <input type="number" id="n1"> <br>
+    <label for="operacao">Escolha uma operação</label><br>
+    <select id="operacao" name="operacao">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select><br>
+    <input type="number" id="n2"><br>
+    <button onclick="calcular()">Calcular</button>
+
+    <h2><p>O resultado é <span id="r"></span></p></h2>
+
+    <script src="script/index.js"></script>
+</body>
+</html>
