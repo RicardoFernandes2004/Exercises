@@ -11,8 +11,7 @@ function soma(){
     }else{
         r.innerHTML = resultado;
     }    
-}
-    
+}  
 function subtração(){
     let resultado = n1.valueAsNumber - n2.valueAsNumber;
     if(isNaN(resultado)){
@@ -22,7 +21,6 @@ function subtração(){
     }    
 
 }
-
 function divisao(){
     let resultado = n1.valueAsNumber / n2.valueAsNumber;
     if(isNaN(resultado)){
@@ -31,7 +29,6 @@ function divisao(){
         r.innerHTML = resultado;
     }    
 }
-
 function multiplicacao(){
     let resultado = n1.valueAsNumber * n2.valueAsNumber;
     if(isNaN(resultado)){
@@ -40,22 +37,29 @@ function multiplicacao(){
         r.innerHTML = resultado;
     }    
 }
-
 function calcular(){
-    if(op.value == '+'){
-        soma();
+    switch (op.value) {
+        case "+":
+            soma()
+            break;
 
-    }else if(op.value == '-'){
+        case "-":
 
-        subtração();
+            subtração()
+            break;
+    
+        case "*":
 
-    }else if(op.value == '/'){
+            multiplicacao()
+            break;
 
-        divisao();
+        case "/":
 
-    }else{
+            divisao()
+            break;
 
-        multiplicacao();
-
+        default:
+            break;
     }
+
 }

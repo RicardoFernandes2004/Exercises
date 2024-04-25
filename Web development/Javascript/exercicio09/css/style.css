@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font: 12pt arial;
+}
+
+h1,h2,h3{
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+button{
+    font-size: 12pt;
+    padding: 30px;
+}
