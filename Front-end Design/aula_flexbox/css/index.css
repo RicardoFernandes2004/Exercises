@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caixa-cinza{
+    background-color: #ccc;
+    height: 200px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.caixa-direction{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+}
+
+
+.circulo{
+    font-size: 150%;
+    color: rgb(250, 192, 0);
+    font-weight: bold;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caixa-branca{
+    background-color: #ffffff;
+    border: 1px solid #eeff00;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caixa-wrap{
+    width: 100px;
+    height: 100px;
+    background-color: #ff7b00;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+}
+
+
+.caixa-azul{
+    background-color: #287bf7;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.caixa-justify{
+    width: 100px;
+    height: 100px;
+    background-color: #fab778;
+    margin: 5px;
+    border-radius: 10px;
+}
+.caixa-azul2{
+    background-color: #287bf7;
+    border-radius: 10px;
+    padding: 5px;
+    width: 122px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.caixa-justify2{
+    width: 100px;
+    height: 100px;
+    background-color: #fab778;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.caixa-roxa{
+    background-color: purple;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.caixa-roxa > div{
+    min-width: 100px;
+    min-height: 50px;
+    margin: 5px;
+    background-color: rgb(250, 152, 32);
+    border: 1px solid black;
+    color: #fff;
+}
