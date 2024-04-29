@@ -5,6 +5,7 @@ restaurantes = [{'nome':'praça', 'categoria':'Japonesa', 'Ativo': False},
                 {'nome':'cantina', 'categoria':'Italiana', 'Ativo': False}]
 
 def exibir_subtitulo(texto):
+    '''Essa função é responsavel por exibir o subtitulo concatenado por asterísticos'''
     os.system("cls")
     linha = '*' * (len(texto))
     print(linha)
@@ -12,6 +13,7 @@ def exibir_subtitulo(texto):
     print(linha)
     print()
 def exibir_nome_programa():
+    '''Essa função é responsavel por exibir o nome do programa'''
     print("""
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
 ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
@@ -20,13 +22,16 @@ def exibir_nome_programa():
 ██████╔╝██║░░██║██████╦╝╚█████╔╝██║░░██║  ███████╗██╔╝╚██╗██║░░░░░██║░░██║███████╗██████╔╝██████╔╝
 ╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░\n""")
 def exibir_opcoes():
+    '''Essa função é responsavel por exibir as opções'''
     print("1. Cadastrar restaurante")
     print("2. Listar restaurante")
     print("3. Alternar estado do restaurante")
     print("4. Sair\n")
 def finalizar_app():
+    '''Essa função é responsavel por finalizar o aplicativo'''
     exibir_subtitulo("finalizando programa")
 def cadastrar_novo_restaurante():    
+    '''Essa função é responsavel por cadastrar um novo restaurante'''
     exibir_subtitulo("Cadastro de novos restaurantes")
     nome_do_restaurante = input("Digite o nome do restaurante que deseja cadastrar: ")
     categoria = input(f"Digite a categoria do restaurante {nome_do_restaurante}: ")
@@ -53,6 +58,7 @@ def alternar_estado_restaurante():
     voltar_ao_menu()
     
 def listagem_restaurantes():
+    '''Essa função é responsavel por listar os restaurantes'''
     exibir_subtitulo("Você escolheu a opção 2. Listar restaurante")
     print(f'{'Nome do restaurante'.ljust(22)} | {'Categoria'.ljust(22)} | {'estado'.ljust(22)}')
     for restaurante in restaurantes:
@@ -62,10 +68,11 @@ def listagem_restaurantes():
         print(f"- {nome_restaurante.ljust(20)} | {categoria.ljust(20)} | Desativado" if estado == False else f"- {nome_restaurante.ljust(20)} | {categoria.ljust(20)} | Ativado")
     voltar_ao_menu()
 def opcao_invalida():
+    '''Essa função é responsavel por exibir uma opção inválida e retornar ao menú'''
     print("Opção inválida\n")
     voltar_ao_menu()
 def escolher_opcao():
-    
+    '''Essa função é responsavel pela escolha das opções'''
     
     opcao_escolhida = input(f"Escolha uma opção: ")
     match  opcao_escolhida:
