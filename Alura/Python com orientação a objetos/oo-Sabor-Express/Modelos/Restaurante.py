@@ -1,5 +1,5 @@
 from Modelos.Avaliacao import Avaliacao
-
+from Modelos.Cardapio.Item_cardapio import ItemCardapio
 class Restaurante:
     restaurantes = []
     
@@ -9,6 +9,7 @@ class Restaurante:
         self._categoria = categoria.upper()
         self._ativo = False
         self._avaliacao = []
+        self._cardapio = []
         Restaurante.restaurantes.append(self)
     
     # faz com que o objeto seja impresso como uma string quando chamado
@@ -48,6 +49,21 @@ class Restaurante:
             return 5.0
         else:
             return media
+    
+    def adicionar_no_cardapio(self,item):
+        if isinstance(item,ItemCardapio):
+            self._cardapio.append(item)
+            
+    @property
+    def exibir_cardapio(self):
+        print(f'Cardapio do Restaurante {self._nome}\n')
+        for i,item in enumerate(self._cardapio,start=1):
+            if hasattr(item,'descricao'):
+                mensagem_prato = f'{i}. Nome: {item._nome}, Preço: {item._preco}, Descrição: {item.descricao}'
+                print(mensagem_prato)
+            elif hasattr(item, 'tamanho'):
+                mensagem_bebida = f'{i}. Nome: {item._nome}, Preço: {item._preco}, Tamanho: {item.tamanho}'
+                print(mensagem_bebida)
             
     
 # restaurante_praça = Restaurante('praça','gourmet')

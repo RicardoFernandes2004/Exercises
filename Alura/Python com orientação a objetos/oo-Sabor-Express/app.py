@@ -1,17 +1,21 @@
 from Modelos.Restaurante import Restaurante
+from Modelos.Cardapio.Bebida import Bebida
+from Modelos.Cardapio.Prato import Prato
+from Modelos.Cardapio.Sobremesa import Sobremesa
+
 
 restaurante_praca = Restaurante('Praça', 'Gourmet')
-restaurante_praca.receber_avaliacao('Gui', 10)
-restaurante_praca.receber_avaliacao('Laís', 8)
-restaurante_praca.receber_avaliacao('Ricardo', 10)
-
-restaurante_casa = Restaurante('Casa', 'Gourmet')
-restaurante_casa.receber_avaliacao('Gui', 3)
-restaurante_casa.receber_avaliacao('Laís', 2)
-restaurante_casa.receber_avaliacao('Ricardo', 5)
+bebida_suco = Bebida('Suco de maça',10.00,'grande')
+bebida_suco.aplicar_desconto()
+prato_paozinho = Prato('Pãozinho',2.00,"O melhor pão da cidade")
+prato_paozinho.aplicar_desconto()
+sobremesa_pudim = Sobremesa('Pudim',20,"Grande")
+restaurante_praca.adicionar_no_cardapio(bebida_suco)
+restaurante_praca.adicionar_no_cardapio(prato_paozinho)
+restaurante_praca.adicionar_no_cardapio(sobremesa_pudim)
 
 def main():
-    Restaurante.listar_restaurantes()
+    restaurante_praca.exibir_cardapio
 
 if __name__ == '__main__':
     main()
