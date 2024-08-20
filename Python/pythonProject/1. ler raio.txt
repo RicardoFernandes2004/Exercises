@@ -1,0 +1,4 @@
+1. ler raio
+2. area = 3.14 x (raio x raio)
+3. exibir area
+4. fim

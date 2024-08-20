@@ -1,0 +1,86 @@
+/* =========== exemplos =========== */
+
+/* Qualquer estilo dentro da seguinte Media Query será executado quando o tamanho da tela for 
+de pelo menos 768px de largura, mas não quando o tamanho da tela for menor: */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* Qualquer estilo dentro da seguinte Media Query será executado quando o tamanho da tela tiver no 
+máximo 1279px de largura, mas não quando o tamanho da tela for maior: */
+@media only screen and (max-width: 1279px) {
+    body {
+        background-color: rgb(4, 162, 253);
+    }
+}
+ 
+/* Qualquer estilo dentro da seguinte Media Query será executado quando o tamanho da tela estiver 
+entre 768px e 1279px de largura, mas não quando o tamanho da tela estiver fora desse intervalo: */
+@media only screen and (min-width: 780px) and (max-width: 1279px) {
+    body {
+        background-color: #000000;
+    }
+}
+
+/* Neste caso, o estilo só será reproduzido se a janela tiver 700px de largura ou mais, e a tela estiver no modo paisagem. */
+@media only screen and (min-width: 700px) and (orientation: landscape) {
+    body {
+        background-color: #a6e90a;
+    }
+}
+  
+/* ############################# exemplo prático ############################# */
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+}
+header {
+    grid-area: header;
+    background-color: red;
+}
+nav {
+    grid-area: nav;
+    background-color: violet;
+}
+main {
+    grid-area: main;
+    background-color: green;
+}
+aside {
+    grid-area: aside;
+    background-color: yellow;
+}
+footer {
+    grid-area: footer;
+    background-color: lightgray;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "nav nav header header"
+            "nav nav main main"
+            "aside footer footer .";
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main aside"
+            "footer footer footer" ;
+    }
+}

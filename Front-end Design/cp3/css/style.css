@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 980px;
+    height: 140px;
+    background-color: aqua;
+    margin-bottom: 15px;
+}
+
+.content-container{
+    display: flex;
+    height: 450px;
+    width: 980px;
+    justify-content:space-between;
+}
+
+.side-bar{
+    width: 270px;
+    height: 450px;
+    background-color: yellow;
+    margin-right: 15px;
+}
+
+.content{
+    height: 450px;
+    width: 690px;
+    background-color: red;
+
+
+}
+
+footer{
+    margin-top: 15px;
+    width: 980px;
+    height: 70px;
+    background-color: green;
+}

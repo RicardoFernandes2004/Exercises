@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+
+section#produtos{
+    grid-area: produtos;
+}
+
+section#servicos{
+    grid-area: servicos;
+}
+
+nav{
+    grid-area: nav;
+}
+
+aside{
+    grid-area: publicidade;
+}
+
+.border{
+    border: 1px solid black;
+}
+
+#grade{
+    display: grid;
+
+    height: 100vh;
+    grid-template-areas: 
+    "nav header header"
+    "nav produtos publicidade"
+    "nav servicos publicidade"
+    "nav footer footer";
+
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-template-columns: 20% auto 15%;
+}
+.pai>*{
+    background-color: darkkhaki;
+}
+
+.pai{ 
+    display: grid;
+    
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 100px);
+
+    gap: 5px;
+
+    justify-items: space-between;
+}
+
+.filho{
+    justify-self: stretch;
+}

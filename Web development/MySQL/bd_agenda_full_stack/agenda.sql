@@ -1,7 +1,2 @@
-CREATE TABLE AGENDA
-(
-	codigo int AUTO_INCREMENT primary key,
-    nome varchar(50) not null,
-    telefone char(9) not null,
-    cpf char(11) not null unique
-)
+insert into agenda (nome, telefone,cpf)
+values('Espionildooo', '983716969','183827492761')
