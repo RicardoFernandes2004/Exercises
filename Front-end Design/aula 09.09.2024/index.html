@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@Container Queries</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* definindo (padrao) */
+    :root {
+      --color: red;
+    }
+
+    /* definindo (apenas em uma classe) */
+    .opaa {
+      --color: green;
+    }
+
+    /* definindo (apenas um elemento especifico) */
+    #opaa {
+      --color: blue;
+    }
+
+    /* aplicando para todo mundo */
+    * {
+      color: var(--color);
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>Eu sou vermelho (herdei do <code>:root</code>)</p>
+  <p class="opaa">Eu sou verde</p>
+  <p id="opaa">
+    Eu sou azul. (<span>E eu sou azul tb (já que meu _parent_ é azul)</span>)
+  </p>
+
+  <br>
+  <hr>
+  <br>
+
+  <div class="test-wrapper">
+    <div class="card">
+      <div class="card__thumb"></div>
+      <div class="card__content">
+        <h3 class="card__title">
+          Inspecione o elemento como uma forma de alimentar sua curiosidade
+        </h3>
+        <p class="card__desc">
+          Um dos melhores presentes que temos como desenvolvedores front-end é inspecionar
+          elemento.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <p>Esta é uma demonstração do container queries</p>
+  </div>
+
+</body>
+
+</html>

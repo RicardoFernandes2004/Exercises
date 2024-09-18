@@ -1,0 +1,49 @@
+body {
+  color: #333; }
+
+a {
+  color: red; }
+
+p {
+  margin: 20px 0; }
+
+nav {
+  width: 100%;
+  background: #000; }
+  nav ul {
+    list-style: none; }
+  nav li {
+    color: #fff;
+    display: inline-block; }
+
+nav {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold; }
+
+a {
+  color: #ffa; }
+  a:hover {
+    color: #faf; }
+
+#main {
+  color: black; }
+  #main a {
+    font-weight: bold; }
+    #main a:hover {
+      color: red; }
+
+aside {
+  width: 300px; }
+
+section {
+  font-family: "Lucida Grande";
+  font-weight: bold; }
+
+body {
+  background: red;
+  color: #ffffff; }
+
+section {
+  background: rgba(0, 0, 0, 0.7); }

@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  color: red; }
+
+a {
+  color: blue; }
+
+p {
+  margin: 0; }
+
+nav {
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: black;
+  width: 100%; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      display: inline-block;
+      color: #fff; }
+
+a {
+  color: green; }
+  a:hover {
+    color: red; }

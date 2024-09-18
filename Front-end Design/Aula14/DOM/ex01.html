@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> aprendendo com DOM</title>
+</head>
+<body>
+    <!-- Faça um programa que capture o evento de um input na sua tela
+    e mostre automaticamente a tabuada desse número abaixo. -->
+        <input id="numero" placeholder="Digite um número" onkeyup="mostrarTabuada()">
+        <div id="resultado"></div>
+        <script>
+            // Define uma função chamada mostrarTabuada
+            function mostrarTabuada(){
+                // Imprime "entrei" no console, útil para fins de depuração
+                console.log("entrei");               
+                // Seleciona o elemento HTML com o ID "numero" e o armazena na variável 'numero'
+                var numero = document.querySelector("#numero");               
+                // Seleciona o elemento HTML com o ID "resultado" e o armazena na variável 'resultado'
+                var resultado = document.querySelector("#resultado");               
+                // Limpa o conteúdo do elemento 'resultado', para evitar a acumulação de resultados anteriores
+                resultado.innerText = "";               
+                // Inicia um loop de 0 a 10 para criar os resultados da tabuada
+                for (var i = 0; i <= 10; i++){
+                    // Cria um novo elemento de divisão <div>
+                    var div = document.createElement("div");                    
+                    /* Define o texto do elemento <div> criado como o resultado da multiplicação do número 
+                        introduzido pelo usuário (capturado pelo elemento 'numero') e o valor atual do loop 'i' */
+                    div.innerText = numero.value * i;
+                    // Adiciona o elemento <div> criado ao elemento 'resultado', para exibição na página HTML
+                    resultado.appendChild(div);
+                }
+            }
+        </script>
+</body>
+</html>

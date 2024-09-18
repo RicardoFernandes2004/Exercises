@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: red;
+}
+
+a{
+    color: blue;
+}
+
+p{
+    margin: 0;
+}
+nav{
+    font: {
+        family: 'Arial', sans-serif;
+        style: italic;
+        size: 30px;
+        weight: bold;
+    }
+    background-color: black;
+    width: 100%;
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            color: #fff;
+        }
+    }
+}
+
+a{
+    color: green;
+    &:hover{
+        color: red;
+    }
+}
+

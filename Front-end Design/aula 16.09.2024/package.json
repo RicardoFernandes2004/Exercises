@@ -1,0 +1,18 @@
+{
+  "name": "aula-16.09.2024",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "Ricardo",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "nodemon": "^3.1.4",
+    "sass": "^1.78.0",
+    "scss": "^0.2.4"
+  }
+}

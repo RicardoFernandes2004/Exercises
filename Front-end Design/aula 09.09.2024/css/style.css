@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: var(--color); */
+}
+/* 
+:root{
+    
+    --color: red;
+} */
+
+.opaa{
+    --color: green;
+}
+
+#opaa{
+    --color:blue;
+}
+
+.test-wrapper{
+    --css-contain: layout inline-size;
+    contain: layout inline-size;
+    resize: horizontal;
+    overflow: auto;
+    margin: 1rem auto;
+    outline: solid 1px grey;
+    outline-offset: 4px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card__thumb{
+    aspect-ratio: 1/1;
+    flex: 0 0 150px;
+    min-height: 150px;
+    background-color: #4caf4c;
+    border-radius: 7px;
+}
+.card__title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.card__content{
+    flex:1
+}
+
+.note{
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media --css-container and (min-width: 400px){
+    .card{
+        flex-direction: row;
+    }
+    .card__thumb{
+        flex: 0 0 100px;
+        min-height: 100px;
+        align-self: flex-start;
+    }
+}
+
+@container (min-width: 400px){
+    .card{
+        flex-direction: row;
+    }
+    .card__thumb{
+        flex: 0 0 100px;
+        min-height: 100px;
+        align-self: flex-start;
+    }
+}
+
+@media --css-container and (min-width: 600px){
+    .card__thumb{
+        flex: 0 0 150px;
+        min-height: 150px;
+    }
+}
+
+@container (min-width: 600px){
+    .card__thumb{
+        flex: 0 0 150px;
+        min-height: 150px;
+    }
+}

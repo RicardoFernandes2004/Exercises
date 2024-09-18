@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos gerais para a página */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Estilos básicos para as caixas redimensionáveis */
+        .resizable-box {
+            background-color: #4caf50;
+            padding: 10px;
+            border-radius: 8px;
+            resize: horizontal;
+            /* Permite redimensionamento horizontal */
+            overflow: hidden;
+            /* Evita que o conteúdo extrapole a caixa */
+            border: 2px solid #388e3c;
+            min-width: 150px;
+            max-width: 100%;
+        }
+
+        /* Container query para diferentes tamanhos das caixas */
+        @container (min-width: 150px) {
+            .resizable-box .content {
+                font-size: 14px;
+                color: white;
+            }
+        }
+
+        @container (min-width: 250px) {
+            .resizable-box .content {
+                font-size: 16px;
+                color: white;
+            }
+        }
+
+        @container (min-width: 350px) {
+            .resizable-box .content {
+                font-size: 18px;
+                color: #dcedc8;
+                font-weight: bold;
+            }
+        }
+
+        @container (min-width: 450px) {
+            .resizable-box {
+                background-color: #388e3c;
+                border: 2px solid #2e7d32;
+            }
+
+            .resizable-box .content {
+                font-size: 20px;
+                color: #c8e6c9;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="resizable-box">
+            <div class="content">Content 1</div>
+        </div>
+        <div class="resizable-box">
+            <div class="content">Content 2</div>
+        </div>
+        <div class="resizable-box">
+            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolorum modi! Ipsum pariatur hic blanditiis odio est cumque ut libero quas omnis voluptates id et vero iusto, veniam dicta odit exercitationem! Ab illo dolor sint reiciendis delectus soluta voluptas amet, modi minima error itaque impedit optio nesciunt deleniti suscipit autem corrupti? Sunt velit et officiis culpa harum vitae ex ipsa at rem saepe error beatae eos explicabo laudantium voluptas ducimus laborum atque hic laboriosam ipsam, quisquam similique maiores omnis a. Ratione ut mollitia et, suscipit velit, reiciendis omnis dolorem molestias laudantium officia cum in debitis laboriosam sequi eos consequatur quae veritatis tenetur! Facere nihil ex consequatur blanditiis cumque, repellendus eius omnis unde praesentium recusandae rerum autem? Dolorem aspernatur, magni blanditiis consequuntur exercitationem et. Dignissimos, officiis aliquam magni, nisi adipisci perspiciatis facilis laborum illum quas dolor accusamus, voluptatum labore odio. Quo, unde. Error, at tenetur similique accusantium sequi commodi quae? Voluptatum vitae id distinctio laboriosam eum quibusdam sed neque doloribus beatae iusto magni nostrum libero tenetur, natus voluptate! Dolore totam inventore sequi sit. Commodi doloribus reiciendis illo iusto accusantium fugit nobis ratione assumenda ullam consequuntur nostrum quae expedita excepturi consectetur earum, totam vitae in sed perferendis. Est alias ea asperiores similique.</div>
+        </div>
+        <div class="resizable-box">
+            <div class="content"><iframe width="560" height="315" src="https://www.youtube.com/embed/K3uWj2MpydI?si=2G1UwbYnVfwaeM8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

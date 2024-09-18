@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Exemplo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Meu Site</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><!--ver explição no fim do cód.-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Página Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">Página 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Página 2</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Bem-vindo à Página Principal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sapien eu nisi cursus finibus vel ac lacus.
+        </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    data-toggle: Este atributo é específico para o framework JavaScript, como o Bootstrap, por exemplo. 
+    Ele indica o tipo de comportamento que deve ser alternado. No caso do Bootstrap, "collapse" é usado 
+    para alternar a exibição de conteúdo colapsável, como um menu de navegação que pode ser expandido e contraído.
+
+    data-target: Indica o destino do evento de alternância. No exemplo, "#navbarNav" é o seletor CSS usado 
+    para identificar o elemento que será afetado pela alternância. Isso se refere à barra de 
+    navegação que será mostrada ou ocultada quando o botão de alternância for clicado.
+
+    aria-controls: Este atributo é parte do padrão de acessibilidade ARIA (Accessible Rich Internet Applications). 
+    Ele fornece uma associação explícita entre o botão de alternância e o elemento que ele controla. No caso deste 
+    botão, "navbarNav" é o ID do elemento que será controlado.
+
+    aria-expanded: Outro atributo ARIA, indica o estado de expansão do elemento controlado pelo botão. 
+    Neste caso, "false" indica que o elemento controlado (provavelmente a barra de navegação) não está expandido inicialmente.
+
+    aria-label: Fornece uma etiqueta acessível para o elemento, que é usada por tecnologias assistivas, 
+    como leitores de tela, para descrever o propósito do botão. No caso deste botão, "Toggle navigation" 
+    é a etiqueta que descreve a função do botão de alternância da barra de navegação. 
+-->

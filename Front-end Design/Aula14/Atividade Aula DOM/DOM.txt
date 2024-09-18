@@ -1,0 +1,11 @@
+1. Usando o método document.getElementById()
+
+2. Usando o método document.getElementsByClassName()
+
+3. Usando o método document.getElementsByTagName()
+
+4. Usando o método document.querySelector()
+
+5. Usando o método document.querySelectorAll()
+
+6. Acessando elementos filhos, usando a propriedade children.

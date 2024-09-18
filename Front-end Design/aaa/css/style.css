@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 239, 216);
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    ". . ."
+    ". . .";
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(6,1fr);
+}
+header{
+    grid-area: header;
+    background-color:#E5FFD1
+}
+
+footer{
+    background-color: black;
+}
+.logoName{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 360px) {
+    .logoName{
+    font-size: 17px;
+    font-weight: bold;
+}
+}

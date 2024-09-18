@@ -1,0 +1,15 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #343a40;
+}
+
+.list-group-item {
+    font-size: 1.1rem;
+}
+
+input::placeholder {
+    color: #6c757d;
+}

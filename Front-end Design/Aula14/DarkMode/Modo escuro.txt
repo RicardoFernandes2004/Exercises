@@ -1,0 +1,7 @@
+Modo escuro:
+
+https://acervolima.com/como-fazer-o-modo-escuro-para-sites-usando-html-css-e-javascript/
+
+https://desenvolvimentoparaweb.com/css/dark-mode-css-facil/
+
+https://darkmodejs.learn.uno
